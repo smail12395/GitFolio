@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="dist/output.css" rel="stylesheet" />
+  <link rel="icon" type="icon/svg" href="./images/svggithub.svg">
+  <title>Github Portfolio  </title>
+  <style>
+  /* *{
+     border: solid 1px red;
+   }*/
+      .gradient-teal {
+    background: linear-gradient(90deg, #38bdf8, #0f766e);
+  }
+  .gradient-emerald {
+    background: linear-gradient(90deg, #34d399, #065f46);
+  }
+  .gradient-amber {
+    background: linear-gradient(90deg, #fbbf24, #b45309);
+  }
+  .gradient-rose {
+    background: linear-gradient(90deg, #f43f5e, #9f1239);
+  }
+  .gradient-indigo {
+    background: linear-gradient(90deg, #818cf8, #3730a3);
+  }
+  .gradient-orange {
+    background: linear-gradient(90deg, #ff8800, #764d0f);
+  }
+  .gradient-yellow {
+    background: linear-gradient(90deg, #d0d334, #5e5f06);
+  }
+  .gradient-cyan {
+    background: linear-gradient(90deg, #24fbfb, #09b45f);
+  }
+  .gradient-purpol {
+    background: linear-gradient(90deg, #d63ff4, #83129f);
+  }
+  .gradient-white {
+    background: linear-gradient(90deg, #aca8a8, #181818);
+  }
+  </style>
+</head>
+<body class="bg-slate-700">
+<div class="form flex flex-col justify-start min-h-screen items-center gap-8 pt-20 px-4">
+     <div>
+       <img class="w-[70px]" src="./images/pnggithub.png" alt="GitHub Logo">
+     </div>
+     <h1 class="text-white py-2 text-4xl font-semibold">
+       FIND YOUR GITHUB PORTFOLIO
+     </h1>
+     <input
+       type="text"
+       class="bg-gray-900 border-0 focus:outline-none text-center text-blue-300 px-6 py-3 rounded-md shadow-md w-full max-w-md"
+       placeholder="Enter YOUR USERNAME HERE"/>
+</div>
+
+<div class="content hidden min-h-screen">
+  <div class="flex flex-col items-center py-4 gap-2">
+    <div class="w-[100px] border-[5px] border-blue-600 rounded-full"><img id="avatar" class=" rounded-full" src="" alt=""></div>
+    <div id="div-name" class="text-white font-semibold text-4xl py-2"></div>
+    <div id="USERNAME" class="text-blue-600 font-semibold text-2xl py-2 cursor-pointer"></div>
+    <div class="flex space-x-1 items-center">
+      <img class="w-4 h-4" src="./images/calendar.png" alt="">
+      <div id="created-at" class="text-white text-lg">12 Aug 2025</div>
+    </div>
+   <div class="flex justify-center gap-4">
+       <div class="repositories bg-slate-500 rounded-lg flex flex-col p-4 justify-center items-center space-y-2 text-white flex-1">
+         <div class="number-respositories">0</div>
+         <div class="leading-tight uppercase">repositories</div>
+       </div>
+       <div class="Folowers bg-slate-500 rounded-lg flex flex-col p-4 justify-center items-center space-y-2 text-white flex-1">
+         <div class="number-folowers">1</div>
+         <div class="leading-tight uppercase">followers</div>
+       </div>
+       <div class="Folowing bg-slate-500 rounded-lg flex flex-col p-4 justify-center items-center space-y-2 text-white flex-1">
+         <div class="number-folowing">1</div>
+         <div class="leading-tight uppercase">following</div>
+       </div>
+</div>
+</div>
+<p class="uppercase text-white text-center m-8 p-2 font-semibold text-2xl leading-tight">Technology Usage Statistics</p>
+<div class="parent-div-statistic flex flex-col statistic_languages bg-white p-4 w-auto mx-20 space-y-4">
+</div>
+
+</div>
+  
+</div>
+
+
+<div class="not-found hidden">
+  <div class="flex flex-col gap-2 justify-center items center pt-20 px-4">
+      <img class="w-[70px]" src="./images/pnggithub.png" alt="GitHub Logo">
+      <p class="text-4xl text-white font-semibold">
+        THIS USER NOT FOUNDED
+      </p>
+  </div>
+</div>
+</body>
+<script>
+  
+</script>
+<script src="main.js"></script>
+</html>
