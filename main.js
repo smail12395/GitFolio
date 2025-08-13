@@ -34,6 +34,7 @@ document.querySelector('input').addEventListener('keydown', function(e) {
          nuOfRepositories.textContent = `${data.public_repos}`;
          nuOfFolowers.textContent = `${data.followers}`;
          nuOfFolowing.textContent = `${data.following}`;
+         
          fetch(data.repos_url).then((res) => {
                return res.json();
               }).then(repoData =>{
@@ -90,6 +91,7 @@ document.querySelector('input').addEventListener('keydown', function(e) {
                 VolumeStatisticBar.className = "flex justify-start h-full rounded-br-xl rounded-tr-xl";
                 VolumeStatisticBar.style.width = parseInt(languages[j][1] * 100 / totalLanguagesTimes) + "%";
                 const randomGradient = gradients[Math.floor(Math.random() * gradients.length)];
+                console.log(randomGradient)
                 VolumeStatisticBar.classList.add(randomGradient);
                 console.log(parseInt(parseInt(languages[j][1])*100/totalLanguagesTimes))
                 divStatisticBar.appendChild(VolumeStatisticBar);
@@ -97,8 +99,7 @@ document.querySelector('input').addEventListener('keydown', function(e) {
                 parentDivBar.appendChild(divStatisticBar);
                 parentDivStatistic.appendChild(parentDivBar)
                }
-
-
+               document.title =  `${document.title} | ${inputValue}`;
 
               }).catch(error =>{console.error(error)})
          content.classList.remove("hidden")
